@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import cn from 'classnames';
 import Confetti from 'react-confetti';
-import { CellType } from './core/enums';
+import { CellType } from './enums';
 
 interface AppState {
 	board: string[][];
