@@ -1,50 +1,91 @@
-# React + TypeScript + Vite
+# Connect 4 - React Game with AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Information
 
-Currently, two official plugins are available:
+**Project Name:** Connect 4 - AI Game  
+**Creator:** Sonny Mijael
+**Technology Stack:** React, TypeScript, TailwindCSS, Framer Motion, Confetti  
+**AI Algorithm:** Rule-based heuristic evaluation for move selection
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This project is a **Connect 4 game** built with React and TypeScript, featuring an AI opponent that plays against the user. The AI evaluates board positions to make strategic moves, and the game includes a responsive UI with animations and confetti effects when a player wins.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Features
+
+### 🎮 Gameplay
+
+-   Play against an **AI opponent** with difficulty levels (Normal/Hard).
+-   **Clickable board** for dropping pieces.
+-   **Confetti animation** when a player wins.
+-   **Resets automatically** with a "Play Again" button after a win.
+-   **Fichas animadas** when placed on the board.
+
+### 📱 Responsive UI
+
+-   **Mobile-friendly design** with adaptive layouts.
+-   **Animated board and pieces** using Framer Motion.
+-   **Dynamic scaling** for different screen sizes.
+
+### 🤖 AI Logic
+
+-   AI detects **winning opportunities** and **blocks player threats**.
+-   Rule-based heuristic for **evaluating board states**.
+-   Strategic prioritization for **winning moves** and **defensive play**.
+
+---
+
+## 💻 Technologies Used
+
+| Technology    | Purpose                     |
+| ------------- | --------------------------- |
+| React         | Frontend framework          |
+| TypeScript    | Type-safe JavaScript        |
+| TailwindCSS   | Styling and responsiveness  |
+| Framer Motion | Animations and interactions |
+| Confetti      | Winning effect              |
+
+---
+
+## 🎯 Skills Demonstrated
+
+✔ **Frontend Development** - React and TypeScript for component-based architecture.  
+✔ **Responsive Design** - TailwindCSS for seamless adaptation to different screen sizes.  
+✔ **Game Logic & AI** - Rule-based heuristic evaluation for move selection.  
+✔ **Animations** - Framer Motion for dynamic and interactive gameplay.  
+✔ **State Management** - React state to track the board, turns, and winner.  
+✔ **User Experience** - Confetti animation and smooth interactions for a polished feel.
+
+---
+
+## 📖 How to Run
+
+### Install dependencies:
+
+```
+bun install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Run the development server:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+bun run dev
+```
+
+### Build for production:
+
+```
+bun run build
+```
+
+---
+
+## 📌 Future Improvements
+
+-   🎵 **Add sound effects** for move placements and wins.
+-   🤖 **Improve AI difficulty** with Minimax algorithm.
+-   🌐 **Multiplayer mode** to play with friends.
